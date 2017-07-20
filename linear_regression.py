@@ -10,6 +10,7 @@ gdp_per_capita = pd.read_csv("gdp_per_capita.csv",thousands=',',delimiter='\t',
                              encoding='latin1', na_values="n/a")
 
 # Prepare the data
+sample_data = full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[keep_indices]
 country_stats = prepare_country_stats(oecd_bli, gdp_per_capita)
 X = np.c_[country_stats["GDP per capita"]]
 y = np.c_[country_stats["Life satisfaction"]]
@@ -27,3 +28,6 @@ lin_reg_model.fit(X, y)
 # Make a prediction for Cyprus
 X_new = [[22587]]  # Cyprus' GDP per capita
 print(lin_reg_model.predict(X_new)) # outputs [[ 5.96242338]]
+
+def prepare_country_stats(oecd_bli, gdp_per_capita):
+    return sample_data
