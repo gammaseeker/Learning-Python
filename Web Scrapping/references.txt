@@ -1,3 +1,4 @@
+Tutorial site: https://www.dataquest.io/blog/web-scraping-tutorial-python/
 http://www.programmingr.com/examples/good-web-scraping-projects-r/
 pokemon web scraping to build a pokedex
 Shakespeare web scraping
