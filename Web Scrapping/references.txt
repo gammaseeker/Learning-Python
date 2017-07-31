@@ -3,3 +3,4 @@ http://www.programmingr.com/examples/good-web-scraping-projects-r/
 pokemon web scraping to build a pokedex
 Shakespeare web scraping
 http://blog.danwin.com/examples-of-web-scraping-in-python-3-x-for-data-journalists/
+http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html
