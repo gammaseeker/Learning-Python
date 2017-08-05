@@ -1,0 +1,7 @@
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:18:55) [MSC v.1900 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> f = open('data.txt', 'w')
+>>> f.write('Hello World')
+11
+>>> f.close()
+>>> 
