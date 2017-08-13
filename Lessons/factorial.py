@@ -1,4 +1,4 @@
-
+#Python mad good with numbers
 def main():
     num = eval(input("Enter number for factorial: "))
     print(str(num) + "! =", factorial(num))
