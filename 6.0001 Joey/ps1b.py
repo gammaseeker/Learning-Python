@@ -11,7 +11,7 @@ def main():
     monthly_salary = annual_salary/12.0
     months = 0
 
-    while(current_savings < (total_cost * portion_down_payment)):
+    while(current_savings <= (total_cost * portion_down_payment)):
         months = months + 1
         if(months % 6 == 0):
             monthly_salary= monthly_salary * (1 + semi)
