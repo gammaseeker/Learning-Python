@@ -13,3 +13,8 @@ print(m)
 
 q = [x**3 for x in range(11)]
 print(q)
+
+words = ["hello", "world", "cat", "Sunmi"]
+for x in words:
+    print(x, len(x))
+
