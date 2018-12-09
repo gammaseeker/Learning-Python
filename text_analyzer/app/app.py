@@ -24,8 +24,8 @@ def freq(text, delim):
             table[item] = table[item]+1
         else:
             table[item] = 1
-    sorted_output = sorted(table.items(), key=operator.itemgetter(1))
-    return sorted_output
+    sorted_output = sorted(table.items(), key=operator.itemgetter(1), reverse=True)
+    return sorted_output[0:5]
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
