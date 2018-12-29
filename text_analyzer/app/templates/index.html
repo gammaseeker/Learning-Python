@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}    
+    <h1>Submit new Text</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.text_input.label }}<br>
+            {{ form.text_input(cols="80", rows="25") }}
+        </p>
+        <p>
+            {{ form.the_choices.label }}
+            {{ form.the_choices }}
+        </p>
+        <p>
+            {{ form.delimiter.label}}:<br>
+            {{ form.delimiter(cols="35", rows="20") }}
+        </p>
+
+        <!--<input type="radio" name="choices" id="countChar" value="countChar"> Count Character</input><br>
+        <input type="radio" name="choices" id="countWord" value="countWord"> Count Words </input><br>-->
+        
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+{% endblock %}
